@@ -1,6 +1,7 @@
 $(document).ready(
     function () {
-        for (let i = 0; i < 10; i++) {
+        let neededEmails = 10;
+        for (let i = 0; i < neededEmails; i++) {
             $.ajax(
                 {
                     url: "https://flynn.boolean.careers/exercises/api/random/mail",
