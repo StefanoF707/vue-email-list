@@ -7,7 +7,6 @@ $(document).ready(
                     method: "GET",
                     success: function (data, stato) {
                         const email = data.response;
-                        console.log(email);
                         $("#mail-list").append(`
                             <li>${email}</li>
                         `)
