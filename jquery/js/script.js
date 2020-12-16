@@ -10,7 +10,7 @@ $(document).ready(
                         const email = data.response;
                         $("#mail-list").append(`
                             <li>${email}</li>
-                        `)
+                        `);
                     },
                     error: function (richiesta, stato, errori) {
                         alert("E' avvenuto un errore. " + errore);
