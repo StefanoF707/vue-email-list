@@ -8,8 +8,8 @@ let app = new Vue (
             for (var i = 0; i < 10; i++) {
                 axios
                 .get('https://flynn.boolean.careers/exercises/api/random/mail')
-                .then( (response) => {
-                    this.emails.push(response.data.response);
+                .then( (result) => {
+                    this.emails.push(result.data.response);
                 });
             }
         }
